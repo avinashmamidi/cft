@@ -8,9 +8,6 @@ provider aws {
   version = "~> 3.0"
   region  = var.aws_region
 
-  assume_role {
-    role_arn = var.tfe_deployment_role_arn
-  }
 }
 
 module "cloudfront-distribution" {
